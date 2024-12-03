@@ -275,6 +275,51 @@ function Home() {
       </Container>
 
       {/* Featured Properties Section */}
+      <Container className="py-5">
+        <h2 className="text-center mb-5" style={{ 
+          color: '#2C3E50',
+          fontSize: '2.5rem',
+          fontWeight: 'bold',
+          position: 'relative',
+          paddingBottom: '15px'
+        }}>
+          Propriétés à la Une
+          <div style={{
+            content: '""',
+            position: 'absolute',
+            bottom: '0',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '80px',
+            height: '4px',
+            background: '#4ECDC4'
+          }}></div>
+        </h2>
+
+        {/* ... Contenu des propriétés ... */}
+
+        <div className="text-center mt-4">
+          <button
+            disabled
+            style={{
+              background: '#2C3E50',
+              color: 'white',
+              border: 'none',
+              padding: '12px 30px',
+              borderRadius: '50px',
+              fontSize: '1.1rem',
+              fontWeight: 'bold',
+              opacity: 0.6,
+              cursor: 'not-allowed',
+              transition: 'all 0.3s ease'
+            }}
+          >
+            Voir toutes les propriétés
+          </button>
+        </div>
+      </Container>
+
+      {/* Featured Properties Section */}
       <div className="bg-light py-5">
         <Container>
           <h2 className="text-center mb-4" style={{ color: '#2C3E50' }}>Propriétés en Vedette</h2>
