@@ -318,38 +318,6 @@ function Home() {
           </button>
         </div>
       </Container>
-
-      {/* Featured Properties Section */}
-      <div className="bg-light py-5">
-        <Container>
-          <h2 className="text-center mb-4" style={{ color: '#2C3E50' }}>Propriétés en Vedette</h2>
-          <Row>
-            {/* Add featured properties here */}
-          </Row>
-          <div className="text-center mt-4">
-            <Button 
-              variant="primary" 
-              href="/properties"
-              style={{ 
-                backgroundColor: '#FF6B6B', 
-                border: 'none', 
-                padding: '10px 30px',
-                transition: 'all 0.3s'
-              }}
-              onMouseOver={e => {
-                e.currentTarget.style.backgroundColor = '#4ECDC4';
-                e.currentTarget.style.transform = 'scale(1.05)';
-              }}
-              onMouseOut={e => {
-                e.currentTarget.style.backgroundColor = '#FF6B6B';
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              Voir toutes les propriétés
-            </Button>
-          </div>
-        </Container>
-      </div>
     </div>
   );
 }
