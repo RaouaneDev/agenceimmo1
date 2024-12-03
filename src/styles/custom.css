@@ -1,0 +1,126 @@
+/* Couleurs festives */
+:root {
+  --primary-color: #FF6B6B;
+  --secondary-color: #4ECDC4;
+  --accent-color: #FFE66D;
+  --dark-color: #2C3E50;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+  padding: 100px 0 !important;
+}
+
+.hero-section h1 {
+  color: white;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section .lead {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--dark-color) !important;
+}
+
+.navbar-brand {
+  color: var(--accent-color) !important;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: var(--primary-color);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-color) !important;
+}
+
+footer h5 {
+  color: var(--accent-color);
+}
+
+/* Services Section */
+.card {
+  background: white;
+  border-top: 4px solid var(--primary-color);
+}
+
+.card:nth-child(2) {
+  border-top-color: var(--secondary-color);
+}
+
+.card:nth-child(3) {
+  border-top-color: var(--accent-color);
+}
+
+/* Contact Form */
+.form-control:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 0.2rem rgba(78, 205, 196, 0.25);
+}
+
+/* Properties Section */
+.properties-section {
+  background-color: #f8f9fa;
+}
+
+.property-card img {
+  border-radius: 15px 15px 0 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card, .hero-section h1, .hero-section .lead {
+  animation: fadeIn 1s ease-out;
+}
