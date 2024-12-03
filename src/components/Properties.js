@@ -79,7 +79,18 @@ function Properties() {
                   <strong>Caractéristiques:</strong> {property.bedrooms} chambres, 
                   {property.bathrooms} sdb, {property.surface}
                 </Card.Text>
-                <Button variant="primary">Voir les détails</Button>
+                <Button 
+                  variant="primary" 
+                  disabled
+                  style={{ 
+                    backgroundColor: '#4ECDC4',
+                    border: 'none',
+                    opacity: 0.6,
+                    cursor: 'not-allowed'
+                  }}
+                >
+                  Voir les détails
+                </Button>
               </Card.Body>
             </Card>
           </Col>
